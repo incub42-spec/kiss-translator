@@ -1,6 +1,6 @@
 # KISS Translator シンプル翻訳
 
-[English](README.en.md) | [中文](README.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+[English](README.en.md) | [中文](README.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Русский](README.ru.md)
 
 シンプルでオープンソースの [バイリンガル対照翻訳拡張機能＆ユーザースクリプト](https://github.com/fishjar/kiss-translator)です。
 
