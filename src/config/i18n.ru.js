@@ -3,8 +3,78 @@
  * @description 俄语界面文案。单独成文件是为了避免在 i18n.js 的 600 多条词条中
  * 逐条追加 `ru` 字段；本表在 i18n.js 中于模块初始化时合并进 I18N。
  *
- * 此处缺失的键（含代码示例的自定义接口帮助文档）在合并时回退为英文文案。
+ * 本分支中全部键（含自定义接口帮助文档）均已翻译；若有遗漏，合并时回退为英文文案。
  */
+
+import { customApiLangs } from "./i18n.langs";
+
+const customApiHelpRU = `// Формат запроса по умолчанию
+{
+  "url": "{{url}}",
+  "method": "POST",
+  "headers": {
+    "Content-type": "application/json",
+    "Authorization": "Bearer {{key}}"
+  },
+  "body": {
+    "text": "{{text}}", // Текст для перевода
+    "from": "{{from}}", // Язык текста (может быть пустым)
+    "to": "{{to}}",     // Язык перевода
+  },
+}
+
+
+// Формат ответа по умолчанию
+{
+  text: "", // переведённый текст
+  from: "", // распознанный язык оригинала
+  to: "",   // язык перевода (необязательно)
+}
+
+
+/// Пример хуков
+// URL
+https://translate.googleapis.com/translate_a/single?client=gtx&dj=1&dt=t&ie=UTF-8&q={{text}}&sl=en&tl=zh-CN
+
+// Хук запроса
+(text, from, to, url, key) => [url, {
+  headers: {
+      "Content-type": "application/json",
+  },
+  method: "GET",
+  body: null,
+}]
+
+// Хук ответа
+// В возвращаемом массиве первое значение — строка перевода, второе — логическое значение,
+// показывающее, совпадает ли язык оригинала с языком перевода.
+(res, text, from, to) => [res.sentences.map((item) => item.trans).join(" "), to === res.src]
+
+
+// Поддерживаются следующие коды языков
+${customApiLangs}
+`;
+
+const requestHookHelperRU = `1. Первый аргумент содержит поля: 'texts', 'from', 'to', 'url', 'key', 'model', 'systemPrompt', ...
+2. Возвращаемое значение должно быть объектом с полями: 'url', 'body', 'headers', 'method'
+3. Если вернуть пустое значение, хук не окажет никакого действия.
+
+// Пример
+async (args, { url, body, headers, userMsg, method } = {}) => {
+  return { url, body, headers, userMsg, method };
+}`;
+
+const responseHookHelperRU = `1. Первый аргумент содержит поля: 'res', ...
+2. Возвращаемое значение должно быть объектом с полем 'translations'
+  ('translations' — двумерный массив: [[перевод, язык оригинала]]).
+3. Если вернуть пустое значение, хук не окажет никакого действия.
+
+// Пример
+async ({ res, ...args }) => {
+  const translations = [["Привет", "en"]];
+  const modelMsg = {}; // для контекста ИИ
+  return { translations, modelMsg };
+}`;
 
 export const RU_I18N = {
   // --- 字幕断句演练场 ---
@@ -105,6 +175,7 @@ export const RU_I18N = {
   patch_setting_help: `Исправляющие скрипты для отдельных сайтов, чтобы перевод отображался корректнее.`,
   inject_webfix: `Внедрять исправления`,
   about: `О программе`,
+  custom_api_doc_url: `https://github.com/incub42-spec/kiss-translator/blob/russian/custom-api_v2.ru.md`,
   about_md: `README.ru.md`,
   about_md_local: `Подробности — [по этой ссылке](${process.env.REACT_APP_HOMEPAGE}).`,
   ui_lang: `Язык интерфейса`,
@@ -626,4 +697,8 @@ export const RU_I18N = {
   text_shadow: `Тень текста`,
   advanced_css: `Дополнительный CSS`,
   close: `Закрыть`,
+
+  custom_api_help: customApiHelpRU,
+  request_hook_helper: requestHookHelperRU,
+  response_hook_helper: responseHookHelperRU,
 };

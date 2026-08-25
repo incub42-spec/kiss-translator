@@ -3,6 +3,7 @@
  * @description 国际化本地化字典文件，包含支持的界面语言、自定义 API 请求帮助文档，以及多语言文案对照（支持中文、英文、繁体中文、日文、韩文）。
  */
 
+import { customApiLangs } from "./i18n.langs";
 import { RU_I18N } from "./i18n.ru";
 
 export const UI_LANGS = [
@@ -15,45 +16,6 @@ export const UI_LANGS = [
   ["vi", "Tiếng Việt"],
   ["ru", "Русский"],
 ];
-
-const customApiLangs = `["en", "English - English"],
-["zh-CN", "Simplified Chinese - 简体中文"],
-["zh-TW", "Traditional Chinese - 繁體中文"],
-["ar", "Arabic - العربية"],
-["bg", "Bulgarian - Български"],
-["ca", "Catalan - Català"],
-["hr", "Croatian - Hrvatski"],
-["cs", "Czech - Čeština"],
-["da", "Danish - Dansk"],
-["nl", "Dutch - Nederlands"],
-["fi", "Finnish - Suomi"],
-["fr", "French - Français"],
-["de", "German - Deutsch"],
-["el", "Greek - Ελληνικά"],
-["hi", "Hindi - हिन्दी"],
-["hu", "Hungarian - Magyar"],
-["id", "Indonesian - Indonesia"],
-["it", "Italian - Italiano"],
-["ja", "Japanese - 日本語"],
-["ko", "Korean - 한국어"],
-["ms", "Malay - Melayu"],
-["mt", "Maltese - Malti"],
-["nb", "Norwegian - Norsk Bokmål"],
-["pl", "Polish - Polski"],
-["pt", "Portuguese - Português"],
-["ro", "Romanian - Română"],
-["ru", "Russian - Русский"],
-["sk", "Slovak - Slovenčina"],
-["sl", "Slovenian - Slovenščina"],
-["es", "Spanish - Español"],
-["sv", "Swedish - Svenska"],
-["ta", "Tamil - தமிழ்"],
-["te", "Telugu - తెలుగు"],
-["th", "Thai - ไทย"],
-["tr", "Turkish - Türkçe"],
-["uk", "Ukrainian - Українська"],
-["vi", "Vietnamese - Tiếng Việt"],
-`;
 
 const customApiHelpZH = `// 请求数据默认格式
 {
@@ -1155,6 +1117,15 @@ export const I18N = {
     ko: `정보`,
     tr: `Hakkında`,
     vi: "Giới thiệu",
+  },
+  custom_api_doc_url: {
+    zh: `https://github.com/fishjar/kiss-translator/blob/master/custom-api_v2.md`,
+    en: `https://github.com/fishjar/kiss-translator/blob/master/custom-api_v2.md`,
+    zh_TW: `https://github.com/fishjar/kiss-translator/blob/master/custom-api_v2.md`,
+    ja: `https://github.com/fishjar/kiss-translator/blob/master/custom-api_v2.md`,
+    ko: `https://github.com/fishjar/kiss-translator/blob/master/custom-api_v2.md`,
+    tr: `https://github.com/fishjar/kiss-translator/blob/master/custom-api_v2.md`,
+    vi: `https://github.com/fishjar/kiss-translator/blob/master/custom-api_v2.md`,
   },
   about_md: {
     zh: `README.md`,
