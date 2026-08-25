@@ -3,6 +3,8 @@
  * @description 国际化本地化字典文件，包含支持的界面语言、自定义 API 请求帮助文档，以及多语言文案对照（支持中文、英文、繁体中文、日文、韩文）。
  */
 
+import { RU_I18N } from "./i18n.ru";
+
 export const UI_LANGS = [
   ["en", "English"],
   ["zh", "简体中文"],
@@ -11,6 +13,7 @@ export const UI_LANGS = [
   ["ko", "한국어"],
   ["tr", "Türkçe"],
   ["vi", "Tiếng Việt"],
+  ["ru", "Русский"],
 ];
 
 const customApiLangs = `["en", "English - English"],
@@ -5796,5 +5799,13 @@ export const I18N = {
     vi: "Đóng",
   },
 };
+
+// 俄语文案存放在单独的文件中，并在模块初始化时一次性合并进来，
+// 以免在上面 600 多条词条中逐条追加 `ru` 字段。
+// 没有俄语译文的键（含代码示例的帮助文档）回退为英文，
+// 与 ja/ko/tr/vi 的现有处理方式一致。
+Object.keys(I18N).forEach((key) => {
+  I18N[key].ru = RU_I18N[key] ?? I18N[key].en;
+});
 
 export const newI18n = (lang) => (key) => I18N[key]?.[lang] || "";
