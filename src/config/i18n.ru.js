@@ -105,7 +105,7 @@ export const RU_I18N = {
   patch_setting_help: `Исправляющие скрипты для отдельных сайтов, чтобы перевод отображался корректнее.`,
   inject_webfix: `Внедрять исправления`,
   about: `О программе`,
-  about_md: `README.en.md`,
+  about_md: `README.ru.md`,
   about_md_local: `Подробности — [по этой ссылке](${process.env.REACT_APP_HOMEPAGE}).`,
   ui_lang: `Язык интерфейса`,
   version_warning: `Текущая версия (v{0}) не последняя (v{1}). Дождитесь автообновления или `,
