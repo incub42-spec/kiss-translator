@@ -1,6 +1,6 @@
 # KISS Translator
 
-[English](README.en.md) | [中文](README.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+[English](README.en.md) | [中文](README.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Русский](README.ru.md)
 
 A simple, open source [bilingual translation extension & Greasemonkey script](https://github.com/fishjar/kiss-translator).
 
