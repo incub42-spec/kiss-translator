@@ -1,6 +1,6 @@
 # KISS Translator
 
-[English](README.en.md) | [中文](README.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+[English](README.en.md) | [中文](README.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Русский](README.ru.md)
 
 [![GitHub Release](https://img.shields.io/github/v/release/fishjar/kiss-translator?color=blue)](https://github.com/fishjar/kiss-translator/releases)
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPL_3.0-green.svg)](https://github.com/fishjar/kiss-translator/blob/master/LICENSE)
