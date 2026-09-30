@@ -1011,4 +1011,17 @@ export const RU_I18N = {
   terminology_playground_check_more: `Ещё строк не показано: {count}.`,
   terminology_playground_check_expand: `Показать все`,
   terminology_playground_check_collapse: `Свернуть`,
+
+  // --- Внешний вид плавающей кнопки ---
+  fab_appearance: `Внешний вид плавающей кнопки`,
+  fab_preview_light: `Светлый предпросмотр`,
+  fab_preview_dark: `Тёмный предпросмотр`,
+  fab_preview_theme_hint: `Нажмите, чтобы переключить светлый и тёмный`,
+  fab_preview_refresh_helper: `Новые настройки вступят в силу после обновления открытых страниц.`,
+  fab_half_hide: `Наполовину прятать плавающую кнопку`,
+  fab_half_hide_helper: `В покое прятать половину кнопки за край экрана, при взаимодействии показывать целиком.`,
+  fab_opacity: `Непрозрачность`,
+  fab_opacity_helper: `Вид в покое; при взаимодействии возвращается 100%.`,
+  fab_size: `Размер`,
+  fab_size_helper: `{min}–{max} px · по умолчанию {default} px`,
 };
