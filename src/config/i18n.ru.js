@@ -666,7 +666,7 @@ export const RU_I18N = {
   rule_editor_closeInspector: `Закрыть панель селекторов`,
   rule_editor_editSelector: `Изменить селектор`,
   rule_editor_manualAdd: `Добавить вручную`,
-  rule_editor_element: `Текущий элемент и его предки`,
+  rule_editor_element: `Выбрать элемент`,
   rule_editor_entries: `Селекторы`,
   rule_editor_pick: `Выбрать элемент`,
   rule_editor_picking: `Щёлкните по элементу страницы, чтобы зафиксировать его; правая кнопка отменяет выбор`,
@@ -1020,4 +1020,10 @@ export const RU_I18N = {
   fab_opacity_helper: `Вид в покое; при взаимодействии возвращается 100%.`,
   fab_size: `Размер`,
   fab_size_helper: `{min}–{max} px · по умолчанию {default} px`,
+
+  // --- Редактор правил: выбор элемента по тексту ---
+  rule_editor_ancestors: `Текущий элемент и родительские`,
+  rule_editor_children: `Вложенные элементы`,
+  rule_editor_atPoint: `Другие элементы под курсором`,
+  rule_editor_structure: `По структуре компонента`,
 };
