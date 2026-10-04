@@ -1050,4 +1050,7 @@ export const RU_I18N = {
   grip_style_percent_style: `В виде процента`,
   grip_style_orbit_satellite: `Спутник на орбите`,
   grip_style_hidden: `Скрыта (растягивание средствами браузера)`,
+
+  // --- Действие по щелчку на плавающей кнопке ---
+  fab_click_popup: `Открыть панель перевода`,
 };
