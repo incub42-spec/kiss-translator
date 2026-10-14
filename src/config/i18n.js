@@ -158,6 +158,15 @@ export const I18N = {
     tr: `Hakkında`,
     vi: "Giới thiệu",
   },
+  custom_api_doc_url: {
+    zh: `https://github.com/fishjar/kiss-translator/blob/master/custom-api_v2.md`,
+    en: `https://github.com/fishjar/kiss-translator/blob/master/custom-api_v2.md`,
+    zh_TW: `https://github.com/fishjar/kiss-translator/blob/master/custom-api_v2.md`,
+    ja: `https://github.com/fishjar/kiss-translator/blob/master/custom-api_v2.md`,
+    ko: `https://github.com/fishjar/kiss-translator/blob/master/custom-api_v2.md`,
+    tr: `https://github.com/fishjar/kiss-translator/blob/master/custom-api_v2.md`,
+    vi: `https://github.com/fishjar/kiss-translator/blob/master/custom-api_v2.md`,
+  },
   about_md: {
     zh: `README.md`,
     en: `README.en.md`,
