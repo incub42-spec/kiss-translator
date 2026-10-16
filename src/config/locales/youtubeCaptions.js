@@ -17,7 +17,7 @@ export const YOUTUBE_CAPTIONS_I18N = {
     ko: "단어에서 벗어나면 지연 후 닫힙니다. 패널 안에서는 조작할 수 있으며 패널을 벗어나면 즉시 닫힙니다.",
     tr: "Sözcükten ayrılınca gecikmeli kapanır. Panelde işlem yapabilirsiniz; panelden ayrılınca hemen kapanır.",
     vi: "Đóng sau một khoảng trễ khi rời từ. Có thể thao tác trong bảng; rời bảng sẽ đóng ngay.",
-    ru: "После ухода с слова панель закрывается с задержкой. Внутри панели можно работать; при выходе из неё она закрывается сразу.",
+    ru: "Панель закрывается с задержкой после того, как курсор уходит со слова. Внутри панели можно продолжать работу; при выходе из неё она закрывается сразу.",
   },
   youtube_caption_idle: {
     zh: "等待字幕",
