@@ -218,7 +218,7 @@ const rows = {
     "캐시 저장에 실패하여 현재 세션 오디오로 계속합니다",
     "Önbellek kaydedilemedi; oturum sesiyle devam ediliyor",
     "Lưu bộ nhớ đệm thất bại; tiếp tục dùng âm thanh phiên hiện tại",
-    "Не удалось сохранить кеш; используется аудио текущего сеанса",
+    "Не удалось сохранить кэш; используется аудио текущего сеанса",
   ],
   youtube_asr_pause_btn: [
     "暂停识别",
@@ -360,7 +360,7 @@ const rows = {
     "자막 캐시 수",
     "Altyazı önbellek sınırı",
     "Số video lưu phụ đề",
-    "Лимит кеша субтитров",
+    "Лимит кэша субтитров",
   ],
   youtube_caption_cache_limit_hint: [
     "缓存 YouTube 原始字幕及双语字幕的视频数量（0–1000，默认100，0表示不保留），超出时淘汰最久未使用的视频。已完成译文直接恢复，缺失部分继续翻译。",
@@ -380,7 +380,7 @@ const rows = {
     "자막 캐시 지우기",
     "Altyazı önbelleğini temizle",
     "Xóa bộ nhớ đệm phụ đề",
-    "Очистить кеш субтитров",
+    "Очистить кэш субтитров",
   ],
   youtube_caption_cache_clear_failed: [
     "字幕缓存清空失败，请重试",
@@ -390,7 +390,7 @@ const rows = {
     "자막 캐시를 지우지 못했습니다. 다시 시도하세요.",
     "Altyazı önbelleği temizlenemedi. Tekrar deneyin.",
     "Không xóa được bộ nhớ đệm phụ đề. Vui lòng thử lại.",
-    "Не удалось очистить кеш субтитров. Повторите попытку.",
+    "Не удалось очистить кэш субтитров. Повторите попытку.",
   ],
   youtube_asr_play_segment: [
     "播放本段音频",
@@ -1456,7 +1456,7 @@ const rows = {
     "오디오를 캐시할 최대 동영상 수(0~1000, 0은 캐시 안 함). 초과 시 오래된 동영상부터 삭제됩니다",
     "Ses önbelleğe alınacak maksimum video sayısı (0-1000, 0 saklamaz). Aşıldığında en eski videolar silinir",
     "Số video tối đa lưu bộ đệm âm thanh (0-1000, 0 nghĩa là không lưu). Vượt quá sẽ xóa video cũ nhất",
-    "Макс. число видео для кэша аудио (0-1000, 0 — не сохранять). При превышении удаляются самые старые видео",
+    "Макс. число видео для кэша аудио (0-1000, 0 — не сохранять). При превышении удаляются самые старые видео.",
   ],
   youtube_asr_clear_audio: [
     "清空音频缓存",
