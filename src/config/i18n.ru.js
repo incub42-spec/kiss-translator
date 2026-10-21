@@ -1125,7 +1125,7 @@ export const RU_I18N = {
   capability_dictionary: `Словарь`,
   capability_segmentation: `Разбиение на фразы`,
   capability_ocr: `OCR`,
-  capability_layout: `Анализ вёрстки`,
+  capability_layout: `Анализ макета`,
   capability_vlm: `VLM`,
   capability_tts: `TTS`,
   capability_asr: `ASR`,
@@ -1249,14 +1249,14 @@ export const RU_I18N = {
   local_ai_play: `Воспроизвести`,
   local_ai_download_wav: `Скачать WAV`,
 
-  // --- Локальный AI: анализ вёрстки документов ---
+  // --- Локальный AI: анализ макета документов ---
   local_ai_group_vlm: `VLM / распознавание изображений и разбор документов`,
-  local_ai_doc_title: `Локальный анализ вёрстки документов (PP-DocLayout)`,
-  local_ai_doc_desc: `Высокоточный конвейер анализа вёрстки для изображений документов и страниц PDF: распознаёт абзацы, заголовки, таблицы, иллюстрации, формулы и порядок чтения`,
-  local_ai_doc_card_title: `Изображение документа и анализ вёрстки`,
+  local_ai_doc_title: `Локальный анализ макета документов (PP-DocLayout)`,
+  local_ai_doc_desc: `Высокоточный конвейер анализа макета для изображений документов и страниц PDF: распознаёт абзацы, заголовки, таблицы, иллюстрации, формулы и порядок чтения`,
+  local_ai_doc_card_title: `Изображение документа и анализ макета`,
   local_ai_doc_upload_image: `Выбрать изображение`,
   local_ai_doc_change_image: `Заменить изображение`,
-  local_ai_doc_run: `Проанализировать вёрстку`,
+  local_ai_doc_run: `Проанализировать макет`,
   local_ai_doc_analyzing: `Анализ...`,
   local_ai_doc_threshold: `Порог уверенности`,
   local_ai_doc_show_boxes: `Рамки областей`,
