@@ -77,7 +77,7 @@ export const LOCAL_AI_I18N = {
     ko: "용량 제한(MiB)",
     tr: "Kapasite (MiB)",
     vi: "Dung lượng tối đa (MiB)",
-    ru: "Максимальный объём (MiB)",
+    ru: "Максимальный объём (МиБ)",
   },
   local_ai_cache_days: {
     zh: "有效期（天）",

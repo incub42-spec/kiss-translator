@@ -121,7 +121,7 @@ export const DIAGNOSTICS_I18N = {
     ko: "콘솔 설정과 관계없이 모든 수준의 로그를 수집합니다. 로컬에 최근 7일 동안 최대 10,000개 / 10 MiB를 저장합니다. 기본적으로 본문은 저장하지 않으며, 상세 진단을 켠 경우에만 민감 정보를 제거한 미리보기를 크기 제한 내에서 저장합니다.",
     tr: "Tüm düzeyler konsol ayarlarından bağımsız olarak toplanır. Yerel olarak 7 gün boyunca, en fazla 10,000 kayıt / 10 MiB saklanır. Gövdeler varsayılan olarak saklanmaz; ayrıntılı tanılama etkinse boyutu sınırlı ve hassas bilgileri gizlenmiş önizlemeler saklanır.",
     vi: "Thu thập mọi mức nhật ký độc lập với cài đặt bảng điều khiển. Lưu cục bộ trong 7 ngày, tối đa 10,000 bản ghi / 10 MiB. Mặc định không lưu nội dung; khi bật chẩn đoán chi tiết, chỉ lưu bản xem trước có giới hạn kích thước và đã ẩn thông tin nhạy cảm.",
-    ru: "Собираются все уровни независимо от настроек консоли. Данные хранятся локально 7 дней, до 10,000 записей / 10 MiB. По умолчанию содержимое не сохраняется; при подробной диагностике сохраняются только предпросмотры ограниченного размера со скрытыми конфиденциальными данными.",
+    ru: "Собираются все уровни независимо от настроек консоли. Данные хранятся локально 7 дней, до 10 000 записей / 10 МиБ. По умолчанию содержимое не сохраняется; при подробной диагностике сохраняются только предпросмотры ограниченного размера со скрытыми конфиденциальными данными.",
   },
   diagnostics_console: {
     zh: "控制台输出级别",
