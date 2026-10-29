@@ -7,7 +7,7 @@ export const PROVIDER_PLUGINS_I18N = {
     ko: "이전 프롬프트를 사용할 수 없어 기본값을 사용합니다",
     tr: "Önceki istem kullanılamıyor; varsayılan kullanılıyor",
     vi: "Lời nhắc trước không khả dụng; dùng mặc định",
-    ru: "Предыдущая подсказка недоступна; используется стандартная",
+    ru: "Предыдущий промпт недоступен; используется стандартный",
   },
   plugin_prompt_protocol: {
     zh: "解析协议",
